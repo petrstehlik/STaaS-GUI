@@ -29,7 +29,7 @@ before_install:
 
 before_script:
     - cd $TRAVIS_BUILD_DIR
-    - git clone git@github.com:CESNET/liberouter-gui.git --depth 1 --branch devel --single-branch
+    - git clone https://github.com/CESNET/liberouter-gui.git --depth 1 --branch devel --single-branch
     - cd liberouter-gui
     - rm -rf modules
     - ln -s $TRAVIS_BUILD_DIR modules/
